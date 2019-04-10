@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<title>WEB1 - Favorite</title>
+<meta charset="utf-8">
+<style>
+body{margin:0;}
+  a {color : black; text-decoration: none;}
+  #active{color:red;}
+  .saw{color:gray;}
+  h1{font-size:60px; text-align: center;
+    border-bottom:1px
+    solid gray;
+    padding:20px;
+    margin:0;
+  }
+  ol{border-right:1px
+    solid gray;
+    width:100px;
+    margin:0;
+    padding:5px;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr
+  }
+  #grid ol{padding-left:33px;}
+  #grid #article{
+    padding-left: 25px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+      ol{border-right:none
+        }
+        h1{
+      border-bottom:none
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>TH page</h1>
+  <div id="grid">
+  <div>
+<ol>
+  <li><a href="1.html" class="saw">Home</a></li>
+  <li><a href="2.html" class="saw">WHO?</a></li>
+  <li><a href="3.html" class="saw" id="active">Hobby or Favorite thing</a></li>
+</ol></div>
+<div><font color="black">
+<p style="margin-top:45px;">저의 취미는 만화책을 보는 것이고 게임을 하는 것 또한 좋아하는 취미 생활입니다.</p>
+<p style="margin-top:45px;">좋아하는 음식은 엄청 많은데 특히 치즈케이크와 바나나우유 연어초밥을 좋아합니다.</p>
+<p style="margin-top:45px;">요즘에는 이고잉 선생님의 생활코딩 수업이 너무 재밌고 쉽게 가르쳐주셔서 이렇게 영상을 보면서 따라하는것이 취미가 될 것 같습니다.</p>
+<p style="margin-top:45px;">여러가지 유용한 정보들을 알려주시는 <strong>김용수 교수님</strong>과 코딩에 재미를 붙이게 해주신 <strong>이고잉 선생님</strong> 진심으로 존경합니다.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7uBInm1PJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
+</html>
